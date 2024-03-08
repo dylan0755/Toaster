@@ -71,21 +71,21 @@ public class BlackToastStyle implements IToastStyle<View> {
 
     protected int getHorizontalPadding(Context context) {
         return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,
-            24, context.getResources().getDisplayMetrics());
+            12, context.getResources().getDisplayMetrics());
     }
 
     protected int getVerticalPadding(Context context) {
         return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,
-            16, context.getResources().getDisplayMetrics());
+            8, context.getResources().getDisplayMetrics());
     }
 
     protected Drawable getBackgroundDrawable(Context context) {
         GradientDrawable drawable = new GradientDrawable();
         // 设置颜色
-        drawable.setColor(0XB3000000);
+        drawable.setColor(0X88000000);
         // 设置圆角
         drawable.setCornerRadius(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,
-            10, context.getResources().getDisplayMetrics()));
+            4, context.getResources().getDisplayMetrics()));
         return drawable;
     }
 
